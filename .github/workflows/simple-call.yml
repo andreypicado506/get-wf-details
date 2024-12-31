@@ -1,3 +1,7 @@
+name: Simple GitHub API call
+
+permissions: read-all
+
 on:
   workflow_dispatch:
 
@@ -8,4 +12,5 @@ jobs:
       - uses: actions/github-script@v7
         with:
           script: |
-            github.rest.emojis.get();
+            emojis = github.rest.emojis.get();
+            console.log(emojis)
