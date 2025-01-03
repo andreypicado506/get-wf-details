@@ -4,12 +4,6 @@ permissions: read-all
 
 on:
   workflow_dispatch:
-    inputs:
-      primero_bis:
-        description: 'Primer número'
-        required: true
-        type: number
-
 
 jobs:
   comment:
