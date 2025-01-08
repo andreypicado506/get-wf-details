@@ -1,3 +1,3 @@
-module.exports = ({github, context}) => {
-    return context.playload.client_payload.value
+module.exports = async ({github, context}) => {
+    const emojis = await github.request('GET /emojis')
 }
